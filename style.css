@@ -1,0 +1,117 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  min-height: 100vh;
+  background-color: #eeeeee;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.squares {
+  width: min(100%, 900px);
+  min-height: 560px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 10px;
+  padding: 40px;
+  background-color: #3d0018;
+}
+
+.squares__row {
+  display: flex;
+  gap: 10px;
+}
+
+.square-group {
+  flex: 1;
+  min-height: 90px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  padding: 10px;
+  background-color: #ff9700;
+}
+
+.square {
+  width: 42px;
+  height: 54px;
+  flex: 0 0 42px;
+  background-color: #a90000;
+}
+
+.square--wide {
+  width: 70px;
+  flex-basis: 70px;
+}
+
+.square--text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 7px;
+  text-align: center;
+}
+
+@media (max-width: 650px) {
+  .squares {
+    padding: 20px;
+  }
+
+  .squares__row {
+    flex-direction: column;
+  }
+
+  .square-group {
+    min-height: 90px;
+  }
+}
+
+.circles {
+  width: min(100%, 900px);
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 10px;
+  padding: 20px;
+  background-color: #ffab00;
+}
+
+.circle-panel {
+  width: 180px;
+  min-height: 130px;
+  display: flex;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 10px;
+}
+
+.circle-panel--dark {
+  background-color: #00082e;
+}
+
+.circle-panel--red {
+  background-color: #7e000b;
+}
+
+.circle {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background-color: #89a9d4;
+}
