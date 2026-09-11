@@ -1,1 +1,35 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
 
+html {
+  line-height: 1.15;
+  -webkit-text-size-adjust: 100%;
+}
+
+body,
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+}
+
+img,
+picture {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input,
+textarea,
+select {
+  font: inherit;
+}
